@@ -20,15 +20,16 @@ function getdata(e){
 
   fetch(url).then(
     function (responce) {
+      console.log(responce);
       return responce.json();
     }
   ).then(
     function (data) {
       Data = data;
+      console.log(Data);
 
       if(Data.cod == "404" || Data.cod == "400"){
         debugger;
-        console.clear();
         alert("ENTER THE CORRECT INPUTS");
         return false;
       }
