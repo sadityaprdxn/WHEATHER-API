@@ -16,7 +16,7 @@ function getdata(e){
   e.preventDefault();
   search = document.querySelector(".location").value;
 
-  var url = "http://api.openweathermap.org/data/2.5/weather?q="+search+"&APPID="+key+"&units=metric";
+  var url = "https://api.openweathermap.org/data/2.5/weather?q="+search+"&APPID="+key+"&units=metric";
 
   fetch(url).then(
     function (responce) {
